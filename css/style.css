@@ -7579,9 +7579,55 @@ line-height: 70px;
     font-size: 16px!important;
     line-height: 21px!important;
   }
+
+   
+  .footer-half .container .row .con-info  {
+    padding-left: 0!important;
+  }
+  .footer-half .container .footer-content {
+    flex-direction: column;
+     width: 100%;
+    padding: 20px 0;
+  }
+
+  .footer-half .container .con-info {
+    padding-left: 0;
+    padding-right: 0;
+   }
+
+  .footer-half .container .social-icon {
+    flex-direction: row;
+    margin-top: 20px;
+     padding: 0;
+  }
+
+  .footer-half .container .social-icon .social a {
+    margin-right: 10px;
+   }
+ 
+
 }
 
 @media screen and (max-width: 480px) {
+
+  .footer-half .container .row {
+    flex-direction: column;
+    align-items: center; /* Centriraj sve unutar kolone */
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .footer-half .navbar-nav-footer {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .footer-half .navbar-nav-footer .nav-item-footer {
+    margin-bottom: 10px;
+  }
+
   .bus .custom-text h2 {
     margin-top: 50px;
     line-height: 40px!important;
