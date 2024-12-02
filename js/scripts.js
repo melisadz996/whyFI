@@ -913,6 +913,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     dropdowns.forEach((dropdown, index) => {
         const toggleButton = dropdown.querySelector('.dropdown-toggle');
+        const icon = toggleButton.querySelector('i'); // Selektujemo strelicu
 
         toggleButton.addEventListener('click', function (event) {
             event.preventDefault();
@@ -935,6 +936,10 @@ document.addEventListener('DOMContentLoaded', function () {
                         }
                     };
                     fadeOut(); // Pokreni fade-out animaciju
+
+                    // Promeni strelicu iz 'up' u 'down'
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
 
                     // Brža tranzicija za sledeći element
                     const nextElement = dropdown.nextElementSibling;
@@ -967,6 +972,10 @@ document.addEventListener('DOMContentLoaded', function () {
                         };
                         fadeIn(); // Pokreni fade-in animaciju
 
+                        // Promeni strelicu iz 'down' u 'up'
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+
                         // Pomeraj sledeći element prema dolje za visinu trenutnog menija
                         const nextElement = dropdown.nextElementSibling;
                         if (nextElement) {
@@ -985,8 +994,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 portfolioSection.style.marginTop = `${menuHeight + 25}px`; // Dodaj razmak od 25px
                             }
                         }
-                    }, 60); // Kašnjenje od 100ms pre nego što se meni prikaže
-
+                    }, 60); // Kašnjenje od 60ms pre nego što se meni prikaže
                 }
             });
         });

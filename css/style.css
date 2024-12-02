@@ -306,6 +306,24 @@ span:hover {
   padding-left: 5%;
 }
 
+.text {
+  text-align: justify;  /* Poravnava ceo tekst ravnomerno */
+  word-wrap: break-word; /* Omogućava prelamanje reči */
+}
+
+.txt span {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.txt p {
+  white-space: normal;   /* Prirodno prelamanje reči */
+  margin: 0;
+  padding: 0;
+}
+
 /*-------------------------------------------------------
 					 text color
 -------------------------------------------------------*/
@@ -1396,7 +1414,7 @@ body {
 /* ====================== [ Start Heading ] ====================== */
 .sec-head {
   position: relative;
-  margin: 0 auto 80px;
+  margin: 0 auto;
 }
 
 .sec-head h6 {
@@ -1405,8 +1423,7 @@ body {
   font-size: 17px;
   text-transform: uppercase;
   letter-spacing: 14px;
-  margin-bottom: 5px;
-}
+ }
 
 .intro-section .htit h3{
  font-size: 80px;
@@ -1425,8 +1442,7 @@ text-align: right;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 4px;
-  line-height: 100px;
-  text-shadow: 0 8px rgba(255, 255, 255, 0.05);
+   text-shadow: 0 8px rgba(255, 255, 255, 0.05);
 }
 
 .sec-head .tbg {
@@ -1663,7 +1679,7 @@ text-align: right;
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-size: 13px;
+  font-size: 24px;
   font-weight: 300;
 }
 
@@ -6647,11 +6663,9 @@ text-align: left;
 .footer-half .container .row .social-icon .social a {
   display: inline-block;          /* Stavite ikonu da bude inline, kako bi se lepo poravnala */
   text-align: center;             /* Poravnanje ikone u centru */
-  padding: 10px;                  /* Padding oko ikone */
-  border-radius: 50%;             /* Krug oko ikone */
+   border-radius: 50%;             /* Krug oko ikone */
   font-size: 20px;                /* Veličina ikone */
-  margin-right: 5px;              /* Razmak između ikona */
-}
+ }
 /* Ako je potrebno, resetuj sve margine i paddinge unutar row */
 .footer-half .container .row * {
   box-sizing: border-box; /* Osiguraj da padding ne izlazi izvan granica */
@@ -6791,11 +6805,36 @@ text-align: left;
 .min-area .container-fluid .img img {
   max-width: 628px!important;
 }
-
+.intro-section .text-content, .intro-section .image-overlay .htit span {
+  visibility: visible;
+}
+.image-under, .intro-section .image-under .htit span {
+display: none;
+}
 
 /* ====================== [ End Footer ] ====================== */
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 991px) {
+
+  .intro-section .text-content, .intro-section .image-overlay .htit span {
+    visibility: hidden;
+  }
+  .image-under {
+display: block;
+margin-bottom: 15px;
+}
+
+.intro-section .image-under .htit span{
+  display: flex;
+  margin-top: 5px;
+}
+  .experts .row {
+    display: flex; /* Postavljamo flexbox model */
+}
+
+.experts .col-lg-8 {
+    order: 2; /* Lista eksperata ide druga na velikim ekranima */
+}
   .bg-img {
     background-position: center !important;
   }
@@ -7077,7 +7116,7 @@ text-align: left;
 
   .min-area .content,
   .min-area .img {
-    padding: 120px 0;
+    padding: 80px 0;
   }
 
   .services .rtwo>div:nth-of-type(2),
@@ -7117,7 +7156,7 @@ text-align: left;
   }
 
   .sec-head.mb-0 {
-    margin-bottom: 80px !important;
+    margin-bottom: 60px !important;
   }
 
   .blog-grid .item {
@@ -7160,7 +7199,7 @@ text-align: left;
 }
 
 .min-area .valign{
-  margin-top: -160px;
+  margin-top: -140px;
  }
  .inner-div {
   padding-top: 80%!important;
@@ -7198,11 +7237,6 @@ text-align: left;
     padding-left: 1.5em; /* Dodaje razmak sa leve strane menija zbog promena u h3 */
     text-align: left;
 }
-
-
- .call-action{
-  margin-top: 100px;
- }
  
  .min-area{
   margin-top: 0!important;
@@ -7229,7 +7263,6 @@ text-align: left;
 }
 .experts .col-lg-8{
  padding-right: 0!important;
- padding-right: 15px!important;
  margin-top: -60px;    
 }
 
@@ -7244,11 +7277,27 @@ width: 31.3%!important;
  
 .intro-section .custom-text .text {
   padding-left:0!important;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 }
 
 @media screen and (max-width: 767px) {
+
+
+  /* Smanjuje razmak između svih span elemenata */
+  .bus .custom-text h2 span {
+    margin-right: 11px !important;  /* Razmak između span elemenata */
+ }
+
+
+
+
+/* Osigurava da "ONE" i "Factory" ostanu u istom redu */
+.highlight {
+    display: inline;  /* Inline ponašanje, ostaju u istom redu */
+ }
+
+ 
   .experts .expertsList .item {
     width: 100%!important;
     margin-right: 0!important;
@@ -7610,6 +7659,12 @@ line-height: 70px;
 
 @media screen and (max-width: 480px) {
 
+  .footer-half .container{
+    padding: 0!important;
+  }
+  .footer-half .logo{
+max-width: 200px!important;
+  }
   .footer-half .container .row {
     flex-direction: column;
     align-items: center; /* Centriraj sve unutar kolone */
@@ -7621,12 +7676,7 @@ line-height: 70px;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    margin-top: 20px;
-  }
-
-  .footer-half .navbar-nav-footer .nav-item-footer {
-    margin-bottom: 10px;
-  }
+   }
 
   .bus .custom-text h2 {
     margin-top: 50px;
@@ -7819,6 +7869,10 @@ display: none;
 
 .dropdown-section .dropdown-menu {
   margin-left: 0!important;
+}
+
+.dropdown-section .container .drop-header h1{
+  font-weight: 600px!important;
 }
 
 .dropdown-section .dropdown-menu .dropdown-item{
@@ -8032,7 +8086,7 @@ display: none;
 
 .bus .custom-text p {
   color: #EAFFF9;
-   font-weight: lighter;  /* Koristi vizualno tanju verziju */ 
+   font-weight: normal;  /* Koristi vizualno tanju verziju */ 
   
  }
 
@@ -8142,7 +8196,7 @@ padding-top: 10px;
  
 
 .experts .container .row{
-  margin-left: 0!important;
+  margin: 0 auto;
  }
 .experts .col-lg-8 {
   padding-left: 0;
@@ -8152,3 +8206,4 @@ padding-top: 10px;
 .expert-info .custom-p-font{
   font-size: 14px!important;
 }
+ 
