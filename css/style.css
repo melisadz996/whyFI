@@ -6811,10 +6811,13 @@ text-align: left;
 .image-under, .intro-section .image-under .htit span {
 display: none;
 }
-
+.onebr{
+  display: none;
+}
 /* ====================== [ End Footer ] ====================== */
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 991px) {
+
      /* Slika unutar custom-image je sakrivena */
   /* Postavi sliku da zauzme celu širinu ekrana */
 /* Postavi sliku da zauzme celu širinu ekrana i visinu 569px */
@@ -7317,15 +7320,19 @@ width: 31.3%!important;
 }
 
 @media screen and (max-width: 767px) {
-
-
-  /* Smanjuje razmak između svih span elemenata */
+  .dot span {
+    margin-left: -1px !important;
+    /* Podesi ovu vrednost po potrebi */
+  }
   .bus .custom-text h2 span {
-    margin-right: 11px !important;  /* Razmak između span elemenata */
- }
+    margin-right: 3px !important;
+    letter-spacing: -5px!important;
+  }
 
-
-
+  .highlight.same-line{
+    padding-left: 10px;
+  }
+  
 
 /* Osigurava da "ONE" i "Factory" ostanu u istom redu */
 .highlight {
@@ -7694,6 +7701,21 @@ line-height: 70px;
 
 @media screen and (max-width: 480px) {
 
+  .onebr{
+    display: block;
+  }
+  .highlight.same-line{
+    padding-left: 0!important;
+  }
+  .dot span {
+    margin-left: 2px !important;
+    /* Podesi ovu vrednost po potrebi */
+  }
+  .bus .custom-text h2 span {
+    margin-right: 2px !important;
+    letter-spacing: -5px!important;
+  }
+
   .footer-half .container{
     padding: 0!important;
   }
@@ -7719,9 +7741,6 @@ max-width: 200px!important;
 letter-spacing: -0.35em!important;
    }
 
-  .bus .custom-text h2 br {
-display: none;
-  }
   .bus .custom-text p{
     margin-top: 15px!important;
   }
@@ -8138,7 +8157,8 @@ font-family: 'Jura', sans-serif; /* Koristi Jura font */
 }
 
 .bus .custom-text h2 span {
-margin-right: 15px;
+  margin-right: 6px;
+  letter-spacing: -7px;
 }
 
 .bus .custom-text .highlight{
@@ -8147,7 +8167,7 @@ margin-right: 15px;
 }
 
 .dot span {
-  margin-left: -18px !important;
+  margin-left: -5px;
   /* Podesi ovu vrednost po potrebi */
 }
 
@@ -8242,3 +8262,10 @@ padding-top: 10px;
   font-size: 14px!important;
 }
  
+/* Prvi deo, sve što nije "ONE Factory" */
+header .caption h2 .highlight.same-line,
+header .caption h2 .dot.same-line {
+    white-space: nowrap;  /* Sprečava prelazak u novi red */
+    display: inline-block;  /* Poziva da budu u istom redu */
+    vertical-align: middle;  /* Poravnava tačku sa "ONE Factory" */
+}
