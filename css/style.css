@@ -7320,6 +7320,16 @@ width: 31.3%!important;
 }
 
 @media screen and (max-width: 767px) {
+  .min-area .content{
+    padding: 90px 0;
+  }
+  .min-area .img
+  {
+    padding: 70px 0;
+  }
+  .intro-section .container .text{
+    margin-top: -25px;
+  }
   .dot span {
     margin-left: -1px !important;
     /* Podesi ovu vrednost po potrebi */
