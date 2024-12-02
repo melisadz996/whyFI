@@ -6815,6 +6815,35 @@ display: none;
 /* ====================== [ End Footer ] ====================== */
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 991px) {
+     /* Slika unutar custom-image je sakrivena */
+  /* Postavi sliku da zauzme celu širinu ekrana */
+/* Postavi sliku da zauzme celu širinu ekrana i visinu 569px */
+.intro-section .custom-image {
+  width: 100%;  /* Slika zauzima celu širinu roditeljskog elementa */
+  height: 569px!important;  /* Visina slike postavljena na 569px */
+  background-image: url('../img/blog/pexels-tima-miroshnichenko-6914007.png'); /* Postavite pozadinsku sliku */
+  background-size: cover;  /* Pozadinska slika pokriva ceo prostor */
+  background-position: center;  /* Centriraj pozadinsku sliku */
+  background-repeat: no-repeat;  /* Spreči ponavljanje slike */
+  background-position: top center; /* Prikazuje gornji deo slike kada se smanji */
+
+}
+
+/* Sakrij originalnu sliku koja je unutar img tag-a */
+.intro-section .custom-image img {
+  display: none;
+}
+
+/* Specifični selektori samo za ovu sekciju */
+.intro-section.services-sec .container {
+  padding: 0 !important; /* Uklanjamo sve padding vrednosti */
+}
+
+/* Ukloni padding za sekciju sa slikom */
+.intro-section.services-sec.section-padding {
+  padding: 0 !important; /* Uklanja sve padding vrednosti */
+}
+
 
   .intro-section .text-content, .intro-section .image-overlay .htit span {
     visibility: hidden;
@@ -6822,6 +6851,12 @@ display: none;
   .image-under {
 display: block;
 margin-bottom: 15px;
+padding-left: 15px;
+padding-right: 15px;
+}
+.txtservice{
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .intro-section .image-under .htit span{
