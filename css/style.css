@@ -159,7 +159,7 @@ span:hover {
   max-width: 1500px;
 }
 
-.custom-font {
+.custom-font, .intro-section .htit span {
   font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -7320,6 +7320,9 @@ width: 31.3%!important;
 }
 
 @media screen and (max-width: 767px) {
+  .intro-section .htit span {
+font-size: 15px!important;
+  }
   .contactp{
     font-size: 16px!important;
     line-height: 21px!important;
