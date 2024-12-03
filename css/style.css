@@ -1420,7 +1420,7 @@ body {
 .sec-head h6 {
   color: #75dab4;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 14px;
  }
@@ -1476,7 +1476,7 @@ text-align: right;
 .sub-title h6 {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -3079,7 +3079,7 @@ header.simpl .caption .btn-curve {
 
 .pages-header .cont h6 {
   color: #75dab4;
-font-size: 16px;
+font-size: 15px;
 font-weight: 400;
 line-height: 18.93px;
 letter-spacing: 0.45em;
@@ -6244,7 +6244,7 @@ text-align: left;
 /* ====================== [ Start Call To Action  ] ====================== */
 .call-action .content h6 {
   color: #75dab4;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -7894,7 +7894,8 @@ letter-spacing: -0.35em!important;
   }
 
   .pages-header .cont h6 {
-    font-size: 13px;
+    font-size: 15px;
+    letter-spacing: 0.30em!important;
   }
 }
 
