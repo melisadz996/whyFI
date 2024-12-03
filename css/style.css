@@ -158,15 +158,13 @@ span:hover {
 .container {
   max-width: 1500px;
 }
-.custom-font{
-  font-family: 'Barlow Condensed', sans-serif;
-
+.custom-font, .intro-section .htit span, .call-action .content h6, .pages-header .cont h6, .intro-section .sub-title h6, .main-content .cont-info h3, .works-header .capt h2 span, .sec-head h6, .footer-half .stit, .sub-title h6{
+  font-family: 'Jura', sans-serif;
 }
 .intro-section .htit span, .call-action .content h6, .pages-header .cont h6, .intro-section .sub-title h6, .main-content .cont-info h3, .works-header .capt h2 span, .sec-head h6, .footer-half .stit, .sub-title h6
   {
     text-transform: uppercase!important;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 18px!important;
+   font-size: 18px!important;
   font-weight: 400!important;
 }
 
@@ -681,6 +679,10 @@ span:hover {
 
 .mt-100 {
   margin-top: 100px !important;
+}
+
+.mt-120 {
+  margin-top: 120px !important;
 }
 
 .mt-200 {
@@ -7314,7 +7316,7 @@ width: 31.3%!important;
 
 @media screen and (max-width: 767px) {
   .sec-head h6{
-    letter-spacing: 10px;
+    letter-spacing: 7px;
   }
   .contactp{
     font-size: 16px!important;
@@ -7714,7 +7716,7 @@ line-height: 70px;
     font-size: 15px!important;
  }
  .sec-head h6{
-  letter-spacing: 6px;
+  letter-spacing: 2px;
  }
   .onebr{
     display: block;
