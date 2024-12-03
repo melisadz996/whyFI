@@ -3602,7 +3602,7 @@ text-align: left;
 /* ====================== [ Start Intro ] ====================== */
 .about .content .co-tit {
   color: #75dab4;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -6817,7 +6817,7 @@ display: none;
 /* ====================== [ End Footer ] ====================== */
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 991px) {
-
+ 
      /* Slika unutar custom-image je sakrivena */
   /* Postavi sliku da zauzme celu širinu ekrana */
 /* Postavi sliku da zauzme celu širinu ekrana i visinu 569px */
@@ -7320,6 +7320,11 @@ width: 31.3%!important;
 }
 
 @media screen and (max-width: 767px) {
+  .contactp{
+    font-size: 16px!important;
+    line-height: 21px!important;
+    margin-top: 10px;
+  }
   .min-area .content{
     padding: 90px 0;
   }
@@ -7426,6 +7431,7 @@ width: 31.3%!important;
 
   h1 {
     font-size: 35px;
+    font-weight: 600!important;
   }
 
   h2 {
@@ -7478,6 +7484,7 @@ text-align: left;
 }
 .min-area .content h3{
   font-size: 35px!important;
+  font-weight: 600!important;
 }
 
 .min-area .content h6{
@@ -8278,3 +8285,5 @@ header .caption h2 .dot.same-line {
     display: inline-block;  /* Poziva da budu u istom redu */
     vertical-align: middle;  /* Poravnava tačku sa "ONE Factory" */
 }
+
+
