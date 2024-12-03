@@ -740,7 +740,7 @@ $(function () {
     var slidHeight = $(".fixed-slider").outerHeight();
 
     $(".main-content").css({
-        marginTop: slidHeight
+        marginTop: slidHeight + 50
     });
 
 });
