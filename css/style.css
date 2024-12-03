@@ -158,12 +158,18 @@ span:hover {
 .container {
   max-width: 1500px;
 }
-
-.custom-font, .intro-section .htit span {
+.custom-font{
   font-family: 'Barlow Condensed', sans-serif;
+
+}
+.intro-section .htit span, .call-action .content h6, .pages-header .cont h6, .intro-section .sub-title h6, .main-content .cont-info h3, .works-header .capt h2 span, .sec-head h6, .footer-half .stit, .sub-title h6
+  {
+    text-transform: uppercase!important;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px!important;
+  font-weight: 400!important;
 }
 
-/* ====================== [ End Typography  ] ====================== */
 /* ====================== [ Start Helper Classes  ] ====================== */
 .o-hidden {
   overflow: hidden;
@@ -1419,9 +1425,7 @@ body {
 
 .sec-head h6 {
   color: #75dab4;
-  font-weight: 300;
-  font-size: 15px;
-  text-transform: uppercase;
+    text-transform: uppercase;
   letter-spacing: 14px;
  }
 
@@ -1474,10 +1478,7 @@ text-align: right;
 }
 
 .sub-title h6 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  text-transform: uppercase;
+    text-transform: uppercase;
   letter-spacing: 4px;
 }
 
@@ -3079,10 +3080,8 @@ min-height:550px ;
 
 .pages-header .cont h6 {
   color: #75dab4;
-font-size: 15px;
-font-weight: 400;
-line-height: 18.93px;
-letter-spacing: 0.45em;
+ line-height: 18.93px;
+letter-spacing: 0.36em;
 text-align: left;
 }
 
@@ -3217,10 +3216,8 @@ text-align: left;
 
 .works-header .capt h2 span {
   display: block;
-  font-size: 20px;
-  font-weight: 300;
-  text-transform: capitalize;
-  color: #75dab4;
+   color: #75dab4;
+   letter-spacing: 4px;
 }
 
 .works-header .capt .bactxt {
@@ -3794,9 +3791,7 @@ text-align: left;
 }
 
 .intro-section .htit span {
-  font-size: 17px;
-  font-weight: 300;
-  color: #75dab4;
+   color: #75dab4;
   margin-right: 5px;
 }
 
@@ -6699,9 +6694,7 @@ text-align: left;
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-size: 13px;
-  font-weight: 300;
-  margin-bottom: 15px;
+   margin-bottom: 15px;
 }
 
 .footer-half .cont .logo {
@@ -7320,8 +7313,8 @@ width: 31.3%!important;
 }
 
 @media screen and (max-width: 767px) {
-  .intro-section .htit span {
-font-size: 15px!important;
+  .sec-head h6{
+    letter-spacing: 10px;
   }
   .contactp{
     font-size: 16px!important;
@@ -7644,10 +7637,7 @@ font-size: 45px;
 line-height: 70px;
 
   }
-  .sec-head h6 {
-    font-size: 15px;
-    letter-spacing: 5px;
-  }
+ 
 
   .skills-circle {
     padding-bottom: 0 !important;
@@ -7719,7 +7709,13 @@ line-height: 70px;
 }
 
 @media screen and (max-width: 480px) {
-
+  .intro-section .htit span, .call-action .content h6, .pages-header .cont h6, .intro-section .sub-title h6, .main-content .cont-info h3, .works-header .capt h2 span, .sec-head h6, .footer-half .stit, .sub-title h6
+  {
+    font-size: 15px!important;
+ }
+ .sec-head h6{
+  letter-spacing: 6px;
+ }
   .onebr{
     display: block;
   }
@@ -7895,11 +7891,7 @@ letter-spacing: -0.35em!important;
   .pages-header .cont h1,.works-header .parlx h1{
     font-size: 40px;
   }
-
-  .pages-header .cont h6 {
-    font-size: 15px;
-    letter-spacing: 0.30em!important;
-  }
+ 
 }
 
 /* ====================== [ End Responsive ] ====================== */
