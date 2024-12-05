@@ -159,7 +159,7 @@ span:hover {
   max-width: 1500px;
 }
 .custom-font, .intro-section .htit span, .call-action .content h6, .pages-header .cont h6, .intro-section .sub-title h6, .main-content .cont-info h3, .works-header .capt h2 span, .sec-head h6, .footer-half .stit, .sub-title h6{
-  font-family: 'Jura', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 .intro-section .htit span, .call-action .content h6, .pages-header .cont h6, .intro-section .sub-title h6, .main-content .cont-info h3, .works-header .capt h2 span, .sec-head h6, .footer-half .stit, .sub-title h6
   {
@@ -7516,7 +7516,7 @@ text-align: left;
     font-size: 40px!important;
 letter-spacing: -0.3em!important;
 margin-top: 50px;
-line-height: 50px!important;
+line-height: 45px!important;
    }
 
   .slider .parallax-slider .caption h1 br {
@@ -7716,7 +7716,7 @@ line-height: 70px;
     font-size: 15px!important;
  }
  .sec-head h6{
-  letter-spacing: 2px;
+  letter-spacing: 5px;
  }
   .onebr{
     display: block;
@@ -7730,7 +7730,7 @@ line-height: 70px;
   }
   .bus .custom-text h2 span {
     margin-right: 2px !important;
-    letter-spacing: -5px!important;
+    letter-spacing: -1px!important;
   }
 
   .footer-half .container{
@@ -8161,14 +8161,15 @@ letter-spacing: -0.35em!important;
 
 .bus .custom-text h2 {
   color: #FFFFFF;
- font-size: 64px;
-font-weight: 700;
-line-height: 70px;
+ font-size: 65px;
+font-weight: 500;
+line-height: 1.1;
+margin-top: 65px;
 letter-spacing: -0.2em;
 text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-font-family: 'Jura', sans-serif; /* Koristi Jura font */
+font-family: 'Barlow Condensed', sans-serif; /* Koristi Jura font */
 }
 
 .bus .custom-text h2 span {
