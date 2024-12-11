@@ -7530,10 +7530,8 @@ text-align: left;
   }
 
   .bus .custom-text h2 {
-    font-size: 48px!important;
-letter-spacing: -0.3em!important;
-margin-top: 50px;
-line-height: 50px!important;
+    font-size:63px!important;
+ 
    }
 
   .slider .parallax-slider .caption h1 br {
@@ -7769,10 +7767,10 @@ max-width: 200px!important;
    }
 
   .bus .custom-text h2 {
-    margin-top: 50px;
-    line-height: 40px!important;
-letter-spacing: -0.35em!important;
-   }
+    font-size: 48px!important;
+line-height: 0.8!important;
+margin-top: 45px!important;
+    }
 
   .bus .custom-text p{
     margin-top: 15px!important;
@@ -8327,4 +8325,9 @@ header .caption h2 .dot.same-line {
 .text-visible {
   opacity: 1;
   visibility: visible;
+}
+
+.bus .container .row   p{
+  line-height: 32px!important;
+  font-weight: 200;
 }
