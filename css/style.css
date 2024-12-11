@@ -1442,6 +1442,7 @@ text-align: left;
 
 .intro-section .text .whyfi-txt {
 text-align: right;
+padding-top: 14px;
 }
 .sec-head h3 {
   font-size: 90px;
@@ -6818,7 +6819,20 @@ display: none;
 }
 
 .intro-section .container .row .text .wow.txtservice[data-wow-delay="2.0s"] {
-  animation-delay: .3s !important;
+  animation-delay: .2s !important;
+}
+.intro-section .container .row .wow[data-wow-delay="1.8s"] {
+  animation-delay: 0.1s !important;  /* Postavljanje kašnjenja na 0.2s */
+}
+
+/* Animacija za element sa data-wow-delay="1.9s" */
+.intro-section .container .row .wow[data-wow-delay="1.9s"] {
+  animation-delay: 0.1s !important;  /* Postavljanje kašnjenja na 0.3s */
+}
+
+/* Animacija za element sa data-wow-delay="2.0s" */
+.intro-section .container .row .wow[data-wow-delay="2.0s"] {
+  animation-delay: 0.4s !important;  /* Postavljanje kašnjenja na 0.4s */
 }
  
      /* Slika unutar custom-image je sakrivena */
@@ -6856,6 +6870,7 @@ display: none;
   }
   .image-under {
 display: block;
+padding-top: 60px!important;
 margin-bottom: 15px;
 padding-left: 15px;
 padding-right: 15px;
@@ -7226,6 +7241,7 @@ padding-right: 15px;
    
   .intro-section .text .whyfi-txt{
     text-align: left!important;
+    padding-top: 0!important;
   }
  
 .min-area .content:after{
