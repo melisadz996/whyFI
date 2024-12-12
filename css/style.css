@@ -139,9 +139,9 @@ h6 {
 
 p {
   color: #FFFFFF;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 38.2px;
+  line-height: 32px;
   margin: 0;
 }
 
@@ -4071,9 +4071,7 @@ text-align: left;
   
   }
   .services .step-item  p{
-   font-size: 24px;
   font-weight: 300;
-  line-height: 38.42px;
   letter-spacing: 0.05em;
   text-align: left;
   text-underline-position: from-font;
@@ -8172,8 +8170,7 @@ margin-top: 40px!important;
   }
 
 .bus .custom-text p {
-  color: #FFFFFF;
-   font-weight: normal;  /* Koristi vizualno tanju verziju */ 
+    font-weight: normal;  /* Koristi vizualno tanju verziju */ 
   
  }
 
@@ -8325,9 +8322,4 @@ header .caption h2 .dot.same-line {
 .text-visible {
   opacity: 1;
   visibility: visible;
-}
-
-.bus .container .row   p{
-  line-height: 32px!important;
-  font-weight: 200;
 }
