@@ -6812,6 +6812,9 @@ display: none;
 /* ====================== [ End Footer ] ====================== */
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 991px) {
+  .services .step-item p{
+    padding-right: 0!important;
+  }
      .intro-section .container .row .text .wow.txtservice[data-wow-delay="1.9s"] {
       animation-delay: .2s !important;
 }
