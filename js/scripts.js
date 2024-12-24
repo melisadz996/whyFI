@@ -894,7 +894,6 @@ $('[data-carousel="swiper"]').each(function () {
             conf.paginationClickable = true
     };
 
-    // Initialization
     if (containe) {
         var initID = '#' + containe;
         var init = new Swiper(initID, conf);
@@ -1001,10 +1000,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 window.onload = function() {
-    // Nađi sve elemente sa klasom .text-hidden
     var textElement = document.querySelector('.intro-section .text-hidden');
     
-    // Dodaj klasu .text-visible kako bi tekst postao vidljiv
     if (textElement) {
         textElement.classList.add('text-visible');
     }
