@@ -330,9 +330,7 @@ span:hover {
 
 .text {
   text-align: justify;
-  /* Poravnava ceo tekst ravnomerno */
   word-wrap: break-word;
-  /* Omogućava prelamanje reči */
 }
 
 .txt span {
@@ -344,7 +342,6 @@ span:hover {
 
 .txt p {
   white-space: normal;
-  /* Prirodno prelamanje reči */
   margin: 0;
   padding: 0;
 }
@@ -3051,25 +3048,17 @@ header.simpl .caption .btn-curve {
   z-index: 5;
 }
 
-
-/* Postavljamo video kao pozadinu */
-/* Osnovni stilovi za video */
 .curve-video {
   position: absolute;
-  /* Postavljamo video pozadi */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Video će ispuniti celu površinu */
   z-index: -1;
-  /* Video je ispod svega */
   overflow: hidden;
-  /* Video neće izlaziti izvan okvira */
 }
 
-/* Slika postavljena kao pozadina iznad videa */
 .curve-bg {
   position: absolute;
   top: 0;
@@ -3077,48 +3066,30 @@ header.simpl .caption .btn-curve {
   width: 100%;
   height: 100%;
   background-size: cover;
-  /* Slika će ispuniti ceo prostor */
   background-position: center center;
-  /* Pozicioniranje slike u centru */
   z-index: 0;
-  /* Slika je iznad videa, ali ispod sadržaja */
 }
 
-
-/* Sadržaj treba da bude iznad videa i slike */
 .container {
   position: relative;
   z-index: 1;
-  /* Sadržaj je iznad videa i slike */
 }
 
-
-/* Osnovna stilizacija pozadinske slike */
 .pages-header {
   height: 75vh;
-  /* Visina sekcije je 100% visine prozora */
   min-height: 550px;
   position: relative;
   background-size: cover;
   background-position: center;
   z-index: 1;
-  /* Pozadinska slika */
 }
-
-
-
 
 .pages-header .cont {
   position: relative;
   z-index: 1;
-  /* Sadržaj je iznad overlay-a */
   color: white;
-  /* Osiguranje da tekst bude vidljiv */
   padding: 20px;
-  /* Opcionalno: dodajte padding za bolju raspodelu prostora */
 }
-
-
 
 .pages-header .cont h6 {
   color: #75dab4;
@@ -4206,42 +4177,28 @@ header.simpl .caption .btn-curve {
   max-width: 628px !important;
 }
 
-/* Premesti pseudo-element u .content i proširi ga */
 .min-area .content {
   position: relative;
-  /* Pozicioniranje sadržaja kako bi :after bio postavljen u odnosu na njega */
   z-index: 2;
 }
 
-/* Pseudo-element za pozadinu */
 .min-area .content::after {
   content: '';
   position: absolute;
   width: 55vw;
-  /* 55% širine ekrana */
   height: 90vh;
-  /* 90% visine ekrana */
   top: -8vh;
-  /* Pomeri od vrha ekrana za 7% visine */
   left: -10vw;
-  /* Pomeri sa leve strane za 10% širine */
   right: 0;
   bottom: 0;
   background: #1a1e25;
   z-index: -1;
-
   max-width: 914px;
-  /* Maksimalna širina */
   max-height: 893px;
-  /* Maksimalna visina */
-
   min-width: 300px;
-  /* Minimalna širina */
   min-height: 850px;
-  /* Minimalna visina */
 }
 
-/* Media Query za ekran širine 1335px i manji */
 @media (max-width: 1335px) {
   .min-area .content::after {
     min-height: 900px;
@@ -4250,34 +4207,23 @@ header.simpl .caption .btn-curve {
   }
 }
 
-/* Media Query za ekran širine 1335px i manji */
 @media (max-width: 1245px) {
   .min-area .content::after {
     min-height: 950px;
-    /* Minimalna visina */
-
   }
 }
 
-/* Media Query za ekran širine 1335px i manji */
 @media (max-width: 1098px) {
   .min-area .content::after {
     min-height: 990px;
-    /* Minimalna visina */
-
   }
 }
 
-/* Media Query za ekran širine 1335px i manji */
 @media (max-width: 1065px) {
   .min-area .content::after {
     min-height: 1050px;
-    /* Minimalna visina */
-
   }
 }
-
-
 
 .min-area .content {
   padding-left: 0;
@@ -6548,22 +6494,14 @@ header.simpl .caption .btn-curve {
 /* ====================== [ End contact ] ====================== */
 /* ====================== [ Start Footer ] ====================== */
 
-/* Centriranje loga unutar div-a */
-
-/* Opšti stilovi za footer */
 .footer-half {
   position: relative;
   z-index: 1;
   background-image: url('../img/Rectangle92.png');
-  /* Putanja do vaše slike */
   background-size: cover;
-  /* Slika će pokriti celu površinu */
   background-position: center center;
-  /* Pozicionira sliku u centar */
   background-repeat: no-repeat;
-  /* Sprečava ponavljanje slike */
   min-height: 400px;
-  /* Minimalna visina footer-a */
 }
 
 
@@ -6571,9 +6509,7 @@ header.simpl .caption .btn-curve {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Centriranje svih elemenata horizontalno */
   justify-content: center;
-  /* Centriranje svih elemenata vertikalno */
   position: relative;
   width: 100%;
 }
@@ -6581,42 +6517,33 @@ header.simpl .caption .btn-curve {
 .footer-half .container .row {
   display: flex;
   justify-content: space-between;
-  /* Razmak između dva diva */
   width: 100%;
   max-width: 850px;
-  /* Maksimalna širina */
   margin: 0 auto;
-  /* Centriranje kontejnera */
   padding: 0 20px;
-  /* Dodaj padding sa strane */
   box-sizing: border-box;
 }
 
 .footer-half .container .footer-content {
   display: flex;
   justify-content: space-between;
-  /* Razmak između levog i desnog elementa */
-  width: 100%;
+   width: 100%;
   max-width: 100%;
-  /* Postavljanje širine na 100% */
-  padding: 10px 0;
+   padding: 10px 0;
 }
 
 .footer-half .container .con-info {
   flex: 1;
-  /* Ovaj div će zauzeti sav preostali prostor */
-  padding-left: 20px;
+   padding-left: 20px;
 }
 
 .footer-half .container .social-icon {
   flex-shrink: 0;
-  /* Ne smanjuje se ako ima manje sadržaja */
-  padding-right: 20px;
+   padding-right: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Centriranje unutar desnog diva */
-}
+ }
 
 .footer-half .container .social-icon .social a {
   width: 45px;
@@ -6637,22 +6564,18 @@ header.simpl .caption .btn-curve {
   padding: 30px 0;
 }
 
-/* Pseudo-element za pozadinu */
-.footer-half .container .row:after {
+ .footer-half .container .row:after {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  /* Pozadina pokriva celu širinu */
-  bottom: 0;
+   bottom: 0;
   background: #151921;
-  /* Tamna pozadina */
-  z-index: -1;
+   z-index: -1;
 }
 
-/* Centriranje loga */
-.footer-half .logo {
+ .footer-half .logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6661,8 +6584,7 @@ header.simpl .caption .btn-curve {
   margin: 0 auto;
 }
 
-/* Stilizovanje menija */
-.footer-half .navbar-nav-footer {
+ .footer-half .navbar-nav-footer {
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -6682,122 +6604,76 @@ header.simpl .caption .btn-curve {
   text-decoration: none;
 }
 
-
-
-
-
-
-
-/* Postavljanje pozadine na row sa after pseudo-elementom */
-/* Postavi širu širinu kontejnera */
 .footer-half .container .row {
   position: relative;
   width: 100%;
-  /* Širina kontejnera treba biti 100% */
   max-width: 750px;
-  /* Postavi maksimalnu širinu ako želiš limitirati širin */
   margin: 0 auto;
-  /* Centriranje kontejnera */
 }
 
-/* Padding za .con-info */
 .footer-half .container .row .con-info {
   padding-left: 20px;
 }
 
-/* Pseudo-element za pozadinu - širi se na celu širinu */
 .footer-half .container .row:after {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  /* Dodaj right: 0 kako bi pozadina ispunila celu širinu */
   bottom: 0;
-  /* Dodaj bottom: 0 kako bi pozadina ispunila celu visinu */
   background: #151921;
-  /* Tamna pozadina */
   z-index: -1;
-  /* Pozadina ide ispod sadržaja */
 }
 
-/* Stilizovanje za .social-icon */
 .footer-half .container .row .social-icon {
   display: flex;
-  /* Postavi flexbox za horizontalni raspored */
   flex-direction: column;
-  /* Vertikalni raspored unutar div-a */
   align-items: flex-start;
-  /* Poravnaj sve sa leve strane */
   padding-left: 0;
-  /* Ukloni bilo koji padding s leve strane */
   margin-left: 0;
-  /* Ukloni bilo koji margin sa leve strane */
 }
 
 .footer-half .container .row .social-icon h6 {
   margin: 0;
-  /* Ukloni marginu oko h6 */
   padding: 0;
-  /* Ukloni padding oko h6 */
   text-align: left;
   font-size: 16px !important;
-  /* Poravnaj tekst levo */
 }
 
 .footer-half .container .row .social-icon .social {
   margin-top: 10px;
-  /* Razmak između teksta i ikone */
 }
 
 .footer-half .container .row .social-icon .social a {
   display: inline-block;
-  /* Stavite ikonu da bude inline, kako bi se lepo poravnala */
   text-align: center;
-  /* Poravnanje ikone u centru */
   border-radius: 50%;
-  /* Krug oko ikone */
   font-size: 20px;
-  /* Veličina ikone */
 }
 
-/* Ako je potrebno, resetuj sve margine i paddinge unutar row */
 .footer-half .container .row * {
   box-sizing: border-box;
-  /* Osiguraj da padding ne izlazi izvan granica */
 }
 
-
-/* Centriranje sadržaja unutar row-a */
 .footer-half .container .row>.col-12 {
   width: 100%;
-  /* Postavlja širinu na 100% */
   max-width: 1200px;
-  /* Maksimalna širina sadržaja (kako bi sadržaj bio lepše centriran) */
   padding: 0 20px;
-  /* Razmak sa strane za sadržaj */
   margin: 0 auto;
-  /* Centriranje sadržaja unutar roditelja */
 }
 
-/* Centriranje loga */
 .footer-half .logo {
   text-align: center;
-  /* Centriranje loga unutar svog roditeljskog div-a */
 }
 
-/* Centriranje menija */
 .footer-half .navbar-nav-footer {
   display: flex;
-  /* Postavlja stavke u horizontalni red */
   justify-content: center;
-  /* Poravnava meni stavke u sredinu */
   padding: 0;
   list-style-type: none;
-  /* Uklanja tačke sa stavki liste */
   margin: 0;
 }
-
 
 .footer-half .stit {
   display: inline-block;
@@ -6942,59 +6818,37 @@ header.simpl .caption .btn-curve {
 
   .intro-section .container .row .wow[data-wow-delay="1.8s"] {
     animation-delay: 0.1s !important;
-    /* Postavljanje kašnjenja na 0.2s */
   }
 
-  /* Animacija za element sa data-wow-delay="1.9s" */
   .intro-section .container .row .wow[data-wow-delay="1.9s"] {
     animation-delay: 0.1s !important;
-    /* Postavljanje kašnjenja na 0.3s */
   }
 
-  /* Animacija za element sa data-wow-delay="2.0s" */
   .intro-section .container .row .wow[data-wow-delay="2.0s"] {
     animation-delay: 0.4s !important;
-    /* Postavljanje kašnjenja na 0.4s */
   }
 
-  /* Slika unutar custom-image je sakrivena */
-  /* Postavi sliku da zauzme celu širinu ekrana */
-  /* Postavi sliku da zauzme celu širinu ekrana i visinu 569px */
   .intro-section .custom-image {
     width: 100%;
-    /* Slika zauzima celu širinu roditeljskog elementa */
     height: 569px !important;
-    /* Visina slike postavljena na 569px */
     background-image: url('../img/blog/pexels-tima-miroshnichenko-6914007.png');
-    /* Postavite pozadinsku sliku */
     background-size: cover;
-    /* Pozadinska slika pokriva ceo prostor */
     background-position: center;
-    /* Centriraj pozadinsku sliku */
     background-repeat: no-repeat;
-    /* Spreči ponavljanje slike */
     background-position: top center;
-    /* Prikazuje gornji deo slike kada se smanji */
-
   }
 
-  /* Sakrij originalnu sliku koja je unutar img tag-a */
   .intro-section .custom-image img {
     display: none;
   }
 
-  /* Specifični selektori samo za ovu sekciju */
   .intro-section.services-sec .container {
     padding: 0 !important;
-    /* Uklanjamo sve padding vrednosti */
   }
 
-  /* Ukloni padding za sekciju sa slikom */
   .intro-section.services-sec.section-padding {
     padding: 0 !important;
-    /* Uklanja sve padding vrednosti */
   }
-
 
   .intro-section .text-content,
   .intro-section .image-overlay .htit span {
@@ -7021,12 +6875,10 @@ header.simpl .caption .btn-curve {
 
   .experts .row {
     display: flex;
-    /* Postavljamo flexbox model */
   }
 
   .experts .col-lg-8 {
     order: 2;
-    /* Lista eksperata ide druga na velikim ekranima */
   }
 
   .bg-img {
@@ -7641,13 +7493,9 @@ header.simpl .caption .btn-curve {
 
   .dropdown-section .dropdown-toggle {
     word-wrap: break-word;
-    /* Omogućava prelamanje reči unutar h3 */
     overflow-wrap: break-word;
-    /* Isto kao word-wrap, za novije standarde */
     white-space: normal;
-    /* Omogućava prelamanje linija (default ponašanje) */
     word-break: normal;
-    /* Prelomi reči na svakoj tački gde je potrebno (ako je dugme preširoko) */
     text-align: left;
   }
 
@@ -7907,7 +7755,6 @@ header.simpl .caption .btn-curve {
 
   .dot span {
     margin-left: 2px !important;
-    /* Podesi ovu vrednost po potrebi */
   }
 
   .bus .custom-text h2 span {
@@ -7926,7 +7773,6 @@ header.simpl .caption .btn-curve {
   .footer-half .container .row {
     flex-direction: column;
     align-items: center;
-    /* Centriraj sve unutar kolone */
     max-width: 100%;
     padding: 0 15px;
   }
